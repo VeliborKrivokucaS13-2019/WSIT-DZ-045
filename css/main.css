@@ -1,0 +1,324 @@
+@font-face {
+  font-family: "poppins";
+  src: url("../font/Poppins/Poppins-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+.padding10,
+.glavni #proizvodid,
+.glavni #proizvodid .sekcijap .proizvodi .pr .btn,
+.glavni #vestid #vesti .sekcija .vest {
+  padding: 10px;
+}
+header {
+  height: 30%;
+  width: 100%;
+  display: inline-block;
+  background-color: #458a5a;
+  text-align: center;
+  background-image: url("../images/pozadina1.jpg");
+  background-size: 100%;
+}
+header .logo {
+  display: inline-block;
+}
+header .logo img {
+  display: inline-block;
+  margin: 15px;
+  height: 100px;
+}
+header .logo a img:hover {
+  filter: saturate(500%);
+  transition: 0.2s;
+}
+header .motod {
+  font-size: 20px;
+  color: black;
+}
+header .motod .moto {
+  width: 25%;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  margin: 0 auto;
+  background-color: rgba(173, 233, 132, 0.349);
+  width: 55%;
+  font-size: 0;
+  text-align: center;
+  list-style-type: none;
+}
+header nav ul .active {
+  background-color: rgba(154, 231, 154, 0.438);
+}
+header nav ul li {
+  text-transform: uppercase;
+  height: 100%;
+  padding: 20px 40px;
+  list-style-type: none;
+  display: inline-block;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+header nav ul li a {
+  font-size: 20px;
+  color: black !important;
+  text-decoration: none !important;
+}
+header nav ul li:hover {
+  filter: saturate(150%);
+  cursor: pointer;
+  background-color: rgba(155, 226, 108, 0.644);
+}
+header .hamburger {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: none;
+  background: transparent;
+}
+header .hamburger img {
+  width: 60px;
+  height: 40px;
+}
+header .hamnav {
+  margin: 0px;
+  padding: 0px;
+  display: none;
+}
+header .hamnav ul {
+  margin: 0px;
+  width: 50%;
+  background-color: rgba(173, 233, 132, 0.349);
+}
+header .hamnav ul li {
+  display: block;
+  border-radius: 10px;
+  padding: 3px;
+}
+header .hamnav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+.glavni {
+  width: 100%;
+  text-align: center;
+}
+.glavni #reg {
+  color: black;
+  height: 22%;
+  background-color: #d9eec4;
+}
+.glavni #reg .forma p {
+  font-size: 20px;
+  color: white;
+}
+.glavni #reg .forma .el input {
+  margin: 5px;
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+  text-align: left;
+}
+.glavni #reg .forma .el label {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+.glavni #reg .forma .el select {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+.glavni #reg .forma .el option {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+  text-align: center;
+}
+.glavni #reg .forma .el .potvrdi {
+  text-align: center;
+}
+.glavni #proizvodid {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.glavni #proizvodid h1::after {
+  width: 60%;
+  content: "";
+  margin: 10px auto;
+  display: flex;
+  line-height: 2px;
+  border: 2px solid #77b677;
+  border-radius: 15px;
+}
+.glavni #proizvodid .sekcijap .proizvodi {
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+@media screen and (max-width: 1100px) {
+  .glavni #proizvodid .sekcijap .proizvodi {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.glavni #proizvodid .sekcijap .proizvodi .pr {
+  position: relative;
+  padding: 20px;
+  display: inline-block;
+  border: 2px solid #35702673;
+  border-radius: 15px;
+  margin: 10px;
+  transition: 0.2s ease-in-out;
+}
+.glavni #proizvodid .sekcijap .proizvodi .pr .btn {
+  cursor: pointer;
+  width: 60%;
+  background-color: rgba(144, 238, 144, 0.363);
+  font-size: 15px;
+  outline-style: none;
+  border-radius: 10px;
+  border-color: #448347;
+  margin: 10px;
+}
+.glavni #proizvodid .sekcijap .proizvodi .pr:hover {
+  transform: scale(1.05);
+}
+.glavni #proizvodid .sekcijap .proizvodi .pr img {
+  width: 100%;
+}
+.glavni #proizvodid .sekcijap .proizvodi .pr p input {
+  width: 30%;
+  outline-style: none;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.glavni #vestid {
+  margin: 0 auto;
+  text-align: left;
+}
+.glavni #vestid .naslov {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 40px 0;
+}
+.glavni #vestid #vesti {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.glavni #vestid #vesti .sekcija {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.glavni #vestid #vesti .sekcija .vest {
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.glavni #vestid #vesti .sekcija .vest .slika {
+  float: left;
+  margin-right: 20px;
+  width: 175px;
+  height: 105px;
+  overflow: hidden;
+}
+.glavni #vestid #vesti .sekcija .vest .slika img {
+  width: 100%;
+}
+.glavni #vestid #vesti .sekcija .vest .v {
+  width: 80%;
+}
+.glavni #vestid #vesti .sekcija .vest .v a {
+  text-decoration: none;
+  color: black;
+}
+.glavni #vestid #vesti .sekcija .vest .v a p {
+  color: #3b3b3b;
+  text-align: left;
+}
+.glavni #vestid #vesti .sekcija .vest .v h3 {
+  text-align: start;
+}
+.glavni #vestid h1::after {
+  width: 70%;
+  content: "";
+  margin: 10px auto;
+  display: block;
+  border: 2px solid #77b677;
+  border-radius: 15px;
+}
+footer {
+  text-align: center;
+  height: 50px;
+  background-color: #8dda8d;
+}
+footer p {
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
+}
+@media screen and (max-width: 1490px) {
+  .moto {
+    width: 65% !important;
+  }
+  .proizvodi {
+    transition: 1s ease-in;
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+  .meni ul {
+    width: 65%;
+  }
+  .meni ul li {
+    padding: 10px;
+  }
+  .meni ul a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .proizvodi {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .meni ul {
+    display: none;
+  }
+  .hamburger {
+    display: block !important;
+  }
+  .proizvodi {
+    transition: 1s ease-in;
+    grid-template-columns: 1fr !important;
+  }
+  #vestid #vesti .sekcija .vest .slika {
+    float: none !important;
+  }
+  footer p {
+    font-size: 12px;
+    transition: 0.5s ease-in-out;
+  }
+}

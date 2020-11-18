@@ -1,0 +1,38 @@
+.containercolor {
+  background-color: rgba(173, 233, 132, 0.349);
+}
+.onamapozicija,
+.containerwrap .onama {
+  margin: 0 auto;
+  text-align: left;
+  width: 50%;
+}
+.containerwrap {
+  background-color: rgba(173, 233, 132, 0.349);
+  margin: 0px;
+  padding: 0px;
+}
+.containerwrap .onama h1 {
+  color: black;
+}
+.containerwrap .onama p {
+  text-align: left;
+}
+.containerwrap .galerija {
+  width: 100%;
+}
+.containerwrap .galerija .row {
+  margin: 0 auto;
+  width: 55%;
+}
+.containerwrap .galerija .row .col-md-4 {
+  margin: 0 auto;
+  padding: 5px;
+}
+.containerwrap .galerija .row .col-md-4 img {
+  border-radius: 20px;
+  padding-top: 10px;
+}
+.containerwrap .galerija .row img {
+  width: 100%;
+}

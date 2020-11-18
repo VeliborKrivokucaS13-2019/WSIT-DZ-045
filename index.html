@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cup of Tea</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo1.png" alt="logo"></a>
+        </div>
+        <div class="motod">
+            <p class="moto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, unde!</p>
+        </div>
+        <nav>
+            <div class="meni">
+                <ul>
+                    <li class="active"><a href="index.html">Pocetna</a></li>
+                    <li><a href="#proizvodid">Proizvodi</a></li>
+                    <li><a href="#vestid">Vesti</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                </ul>
+            </div>
+            <button class="hamburger">
+                <img src="images/hamburger_ico.png" alt="">
+            </button>
+            <div class="hamnav">
+                <ul>
+                    <li class="active"><a href="index.html">Pocetna</a></li>
+                    <li><a href="#proizvodid">Proizvodi</a></li>
+                    <li><a href="#vestid">Vesti</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="glavni">
+        <section id="reg">
+            <form class="forma" action="" method="GET">
+                <h2>Registruj se</h2>
+                <div class="el">
+                    <label for="ime">Unesite ime:</label>
+                    <input type="text">
+                </div>
+                <div class="el">
+                    <label for="prezime">Unesite prezime:</label>
+                    <input type="text">
+                </div>
+                <div class="el">
+                    <label for="ime">Unesite email:</label>
+                    <input type="email">
+                </div>
+                <div class="el">
+                    <label for="ime">Password:</label>
+                    <input type="password">
+                </div>
+                <div class="el">
+                    <label for="datum">Datum rođenja:</label>
+                    <input type="date">
+                </div>
+                <div class="el">
+                    <label for="ime">Broj telefona:</label>
+                    <input type="tel">
+                </div>
+                <div class="el">
+                    <label for="ime">Izaberite boju</label>
+                    <input type="color" value="#BBE274">
+                </div>
+                <div class="el">
+                    <label for="rod">Odaberite rod:</label>
+                    <select id="rod">
+                        <option value="Muski">Muski</option>
+                        <option value="Zenski">Zenski</option>
+                    </select>
+                </div>
+                <div class="el">
+                    <input class="potvrdi" type="submit" value="Potvrdi">
+                </div>
+            </form>
+        </section>
+
+        <section id="proizvodid">
+            <h1>Proizvodi</h1>
+            <div class="sekcijap">
+                <div class="proizvodi">
+                    <div class="pr">
+                        <h2>Dikom Tgfop</h2>
+                        <img src="images/proizvodi/Assam_Dikom_Tgfop.png" alt="">
+                        <p>Cena: <strong>700 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Ayurvedic Active</h2>
+                        <img src="images/proizvodi/ayurvedic-tea-active-woman.png" alt="">
+                        <p>Cena: <strong>600 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Limun i nana</h2>
+                        <img src="images/proizvodi/ayurvedic-tea-lemon-mint.jpg.png" alt="">
+                        <p>Cena: <strong>600 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Pomorandza</h2>
+                        <img src="images/proizvodi/ayurvedic-tea-spiced-orange.jpg.png" alt="">
+                        <p>Cena <strong>700 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Ayurvedic caj kokos</h2>
+                        <img src="images/proizvodi/ayurverdic-tea-coconut-turmeric-50-g.jpg.png" alt="">
+                        <p>Cena:<strong> 650 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Bamboo Hut</h2>
+                        <img src="images/proizvodi/bamboo-hut.png" alt="">
+                        <p>Cena: <strong>800 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Bora Bora</h2>
+                        <img src="images/proizvodi/bora-bora.jpg.png" alt="">
+                        <p>Cena: <strong>850 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Phoenix Pearls</h2>
+                        <img src="images/proizvodi/China_Jasmine_Dragon_Phoenix_Pearls.png" alt="">
+                        <p>Cena:<strong>750 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Bakina basta</h2>
+                        <img src="images/proizvodi/grannys-garden.jpg.png" alt="">
+                        <p>Cena: <strong>600 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Vanilla Bourbon</h2>
+                        <img src="images/proizvodi/vanilla-bourbon.jpg.png" alt="">
+                        <p>Cena: <strong>650 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Narandza</h2>
+                        <img src="images/proizvodi/ayurvedic-tea-spiced-orange.jpg.png" alt="">
+                        <p>Cena: <strong>500 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                    <div class="pr">
+                        <h2>Rooibos</h2>
+                        <img src="images/proizvodi/rooibos-great-temptation.jpg-600x400.png" alt="">
+                        <p>Cena: <strong>620 RSD / 100g</strong></p>
+                        <p>Kolicina: <input type="number" min="1" value="1"></p>
+                        <button class="btn">Dodaj u korpu</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vestid">
+            <h1 class="naslov">Vesti:</h1>
+            <div id="vesti">
+                <div class="sekcija">
+                    <div class="vest">
+                        <div class="slika">
+                            <a href=""><img src="images/vest1.jpg" alt=""></a>
+                        </div>
+                        <div class="v">
+                            <a href="">
+                                <h3>Zeleni čaj koristan za mozak, kožu i kosti</h3>
+                                <p>Zeleni čaj je jedan od najpopularnijih napitaka koje se konzumira širom sveta i
+                                    koristi se hiljadama...</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vest">
+                        <div class="slika">
+                            <a href=""><img src="images/vest2.jpg" alt=""></a>
+                        </div>
+                        <div class="v">
+                            <a href="">
+                                <h3>Pet blagotvornih dejstava crnog čaja</h3>
+                                <p>Pojačava imunitet i poboljšava rad srca, sa mnogim blagotvornim dejstvima...</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vest">
+                        <div class="slika">
+                            <a href=""><img src="images/vest3.jpg" alt=""></a>
+                        </div>
+                        <div class="v">
+                            <a href="">
+                                <h3>Čaj od kamilice, lek za telo i dušu</h3>
+                                <p>Saznajte kakve sve prednosti ima čaj od kamilice...</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vest">
+                        <div class="slika">
+                            <a href=""><img src="images/vest4.jpg" alt=""></a>
+                        </div>
+                        <div class="v">
+                            <a href="">
+                                <h3>Trinaest razloga da pijete čaj od maslačka</h3>
+                                <p>Čaj od maslačka reguliše dijabetes, pospešuje zdravlje jetre, pun je vitamina...</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="vest">
+                        <div class="slika">
+                            <a href=""><img src="images/vest5.jpg" alt=""></a>
+                        </div>
+                        <div class="v">
+                            <a href="">
+                                <h3>Zeleni čaj za zdravo srce</h3>
+                                <p>Smatra se da ljudi mogu živeti duže ako zeleni čaj piju najmanje tri puta nedeljno
+                                    jer on može da smanji rizik od nastanka srčanog i moždanog udara.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Velibor Krivokuca S13/2019, Cane Babovic 2/4, vkrivokuca1319s@raf.rs, 066-320/151</p>
+    </footer>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

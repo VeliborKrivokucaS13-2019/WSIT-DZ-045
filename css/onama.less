@@ -1,0 +1,46 @@
+@full: 100%;
+@half5width: 55%;
+@zeropix: 0px;
+
+.containercolor {
+    background-color: rgba(173, 233, 132, 0.349);
+}
+.galerijawidth(@width) {
+    width: @width;
+}
+.onamapozicija {
+    margin: 0 auto;
+	text-align: left;
+	width: 50%;
+}
+.containerwrap {
+	.containercolor;
+	margin: @zeropix;
+	padding: @zeropix;
+	.onama:extend(.onamapozicija) {
+		h1 {
+			color: black;
+		}
+		p {
+			text-align: left;
+		}
+    }
+    .galerija {
+        .galerijawidth(@full);
+        .row {
+            margin: 0 auto;
+            width: @half5width;
+            .col-md-4 {
+                margin: 0 auto;
+                padding: 5px;
+                img {
+                    border-radius: 20px;
+                    padding-top: 10px;
+                }
+            }
+            img {
+                width: @full;
+            }
+        }
+    }
+}

@@ -1,0 +1,375 @@
+@gboja: rgba(173, 233, 132, 0.349);
+@full: 100%;
+@mainfontsize: 20px;
+@fontradius: 15px;
+@crna: black;
+@font-family: poppins, sans-serif;
+
+@font-face {
+	font-family: "poppins";
+	src: url("../font/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: @font-family;
+	text-align: center;
+	box-sizing: border-box;
+	&:focus {
+		outline: none !important;
+	}
+}
+
+html {
+	scroll-behavior: smooth !important;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.hamnavset(@pixels) {
+    margin: @pixels;
+    padding: @pixels;
+    display: none;
+}
+
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+header {
+	height: 30%;
+	width: @full;
+	display: inline-block;
+	background-color: rgb(69, 138, 90);
+	text-align: center;
+	background-image: url("../images/pozadina1.jpg");
+	background-size: @full;
+	.logo {
+		display: inline-block;
+		img {
+			display: inline-block;
+			margin: @fontradius;
+			height: 100px;
+		}
+		a {
+			img {
+				&:hover {
+					filter: saturate(500%);
+					transition: 0.2s;
+				}
+			}
+		}
+	}
+	.motod {
+		font-size: @mainfontsize;
+		color: @crna;
+		.moto {
+		width: 25%;
+		display: inline-block;
+		margin: 10px;
+		text-align: center;
+		}
+	}
+	nav {
+		width: @full;
+		ul {
+		margin: 0 auto;
+		background-color: @gboja;
+		width: 55%;
+		font-size: 0;
+		text-align: center;
+		list-style-type: none;
+		.active {
+			background-color: rgba(154, 231, 154, 0.438);
+		}
+		li {
+			text-transform: uppercase;
+			height: @full;
+			padding: 20px 40px;
+			list-style-type: none;
+			display: inline-block;
+			.border-radius(10px);
+			transition: 0.3s;
+			
+			a {
+				font-size: @mainfontsize;
+				color: @crna !important;
+				text-decoration: none !important;
+			}
+			&:hover {
+				filter: saturate(150%);
+				cursor: pointer;
+				background-color: rgba(155, 226, 108, 0.644);
+				}
+			}
+		}
+	}
+    .hamburger {
+		cursor: pointer;
+	    border: none;
+	    outline: none;
+		display: none;
+		background: transparent;
+	    img {
+		    width: 60px;
+	    	height: 40px;
+	    }
+    }
+    .hamnav {
+        .hamnavset(0px);
+	    ul {
+		    margin: 0px;
+		    width: 50%;
+			background-color: @gboja;
+		    li {
+		    	display: block;
+		    	.border-radius(10px);
+		    	padding: 3px;
+		    	a {
+		    		color: @crna;
+		    		text-decoration: none;
+		    		font-size: 18px;
+		    	}
+		    }
+	    }
+    }
+}
+
+.glavni {
+	width: @full;
+    text-align: center;
+    #reg {
+        color: @crna;
+        height: 22%;
+		background-color: rgb(217, 238, 196);
+		.forma {
+			p {
+				font-size: @mainfontsize;
+				color: white;
+			}
+			.el {
+				input {
+					margin: 5px;
+					display: inline-block;
+					text-align: right;
+					width: 150px;
+					text-align: left;
+				}
+				label {
+					display: inline-block;
+					text-align: right;
+					width: 150px;
+				}
+				select {
+					display: inline-block;
+					text-align: right;
+					width: 150px;
+				}
+				option {
+					display: inline-block;
+					text-align: right;
+					width: 150px;
+					text-align: center;
+				}
+				.potvrdi {
+					text-align: center;
+				}
+			}
+		}
+	}
+	#proizvodid:extend(.padding10) {
+		background-color: rgb(255, 255, 255);
+		overflow: hidden;
+		h1 {
+			&::after {
+				width: 60%;
+				content: "";
+				margin: 10px auto;
+				display: flex;
+				line-height: 2px;
+				border: 2px solid rgb(119, 182, 119);
+				border-radius: @fontradius;
+			}
+		}
+		.sekcijap {
+			.proizvodi {
+				@media screen and (max-width: 1100px) {
+					grid-template-columns: 1fr 1fr;
+				}
+				margin: 0 auto;
+				width: 70%;
+				display: grid;
+				grid-template-columns: 25% 25% 25% 25%;
+				.pr {
+					position: relative;
+					padding: 20px;
+					display: inline-block;
+					border: 2px solid #35702673;
+					border-radius: @fontradius;
+					margin: 10px;
+					transition: 0.2s ease-in-out;
+					.btn:extend(.padding10) {
+						cursor: pointer;
+						width: 60%;
+						background-color: rgba(144, 238, 144, 0.363);
+						font-size: @fontradius;
+						outline-style: none;
+						.border-radius(10px);
+						border-color: rgb(68, 131, 71);
+						margin: 10px;
+					}
+					&:hover {
+						transform: scale(1.05);
+					}
+					img {
+						width: @full;
+					}
+					p {
+						input {
+							width: 30%;
+							outline-style: none;
+							padding: 5px;
+							border-radius: @fontradius;
+							font-size: @fontradius;
+						}
+					}
+				}
+			}
+		}
+	}
+	#vestid {
+		margin: 0 auto;
+		text-align: left;
+		.naslov {
+			position: relative;
+			text-transform: uppercase;
+			font-size: @mainfontsize;
+			margin: 40px 0;
+		}
+		#vesti {
+			margin: 0 auto;
+			width: @full;
+			margin-bottom: 50px;
+			.sekcija {
+				display: block;
+				position: relative;
+				width: 70%;
+				margin-right: auto;
+				margin-left: auto;
+				.vest:extend(.padding10) {
+					text-align: left;
+					cursor: pointer;
+					margin-bottom: 50px;
+					.slika {
+						float: left;
+						margin-right: 20px;
+						width: 175px;
+						height: 105px;
+						overflow: hidden;
+						img {
+							width: @full;
+						}
+					}
+					.v {
+						a {
+							text-decoration: none;
+							color: @crna;
+							p {
+								color: rgb(59, 59, 59);
+								text-align: left;
+							}
+						}
+						width: 80%;
+						h3 {
+							text-align: start;
+						}
+					}
+				}
+			}
+		}
+		h1 {
+			&::after {
+				width: 70%;
+				content: "";
+				margin: 10px auto;
+				display: block;
+				border: 2px solid rgb(119, 182, 119);
+				border-radius: @fontradius;
+			}
+		}
+	}
+    
+}
+
+footer {
+	text-align: center;
+	height: 50px;
+	background-color: rgb(141, 218, 141);
+	p {
+		margin: 0 auto;
+		padding-top: @fontradius;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1490px) {
+    .moto {
+        width: 65% !important;
+    }
+	.proizvodi {
+		transition: 1s ease-in;
+		grid-template-columns: 1fr 1fr 1fr !important;
+	}
+	.meni {
+		ul {
+            width: 65%;
+            li{
+                padding: 10px;
+            }
+            a {
+                font-size: @fontradius;
+            }
+        }
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.proizvodi {
+		grid-template-columns: 1fr 1fr !important;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.meni {
+		ul {
+			display: none;
+		}
+	}
+	.hamburger {
+		display: block !important;
+	}
+	.proizvodi {
+		transition: 1s ease-in;
+		grid-template-columns: 1fr !important;
+	}
+	#vestid {
+		#vesti {
+			.sekcija {
+				.vest {
+					.slika {
+						float: none !important;
+					}
+				}
+			}
+		}
+	}
+    footer {
+		p {
+			font-size: 12px;
+			transition: 0.5s ease-in-out;
+		}
+    }
+}

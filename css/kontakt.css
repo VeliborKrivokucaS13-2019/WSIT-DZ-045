@@ -1,0 +1,59 @@
+.kontaktpadding,
+.kontakt {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.containerdisplay,
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+}
+.labelpositioning,
+.container .forma form .labele label {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+.kontakt {
+  background-color: rgba(200, 255, 175, 0.438);
+}
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+.container iframe {
+  width: 100%;
+}
+.container .forma {
+  background-color: rgba(155, 226, 108, 0.644);
+  width: 100%;
+}
+.container .forma form {
+  margin-top: 20px;
+}
+.container .forma form .labele label {
+  width: 150px;
+}
+.container .forma form .labele input {
+  font-size: 15px;
+  outline: none;
+  text-align: left;
+}
+.container .forma form .labele textarea {
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+  width: 75%;
+}
+.container .forma form .labele textarea {
+  font-size: 15px;
+  outline: none;
+  text-align: left;
+}
+footer {
+  width: 100%;
+}
